@@ -21,7 +21,7 @@ export default function CVBuilder() {
 
   const { toPDF, targetRef } = usePDF({ filename: "my-cv.pdf" })
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e:any) => {
     const { name, value } = e.target
     setCV((prevCV) => ({ ...prevCV, [name]: value }))
   }
